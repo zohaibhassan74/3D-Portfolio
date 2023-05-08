@@ -17,10 +17,11 @@ const App = () => {
         <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <Navbar />
           <Hero />
+          <About />
         </div>
         <div className="relative z-0">
-          {/* <Contact />
-        <Stars/> */}
+          <Contact />
+          <Stars />
         </div>
       </div>
     </BrowserRouter>

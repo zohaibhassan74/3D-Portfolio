@@ -12,31 +12,35 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-          <div>
-           <h1 className={`${styles.heroSubText}`}>Hi, I'm <span className="text-[#915eff]">Zohaib</span></h1>
-           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop Front-Ends in React</p>
+        <div>
+          <h1 className={`${styles.heroSubText}`}>
+            Hi, I'm <span className="text-[#915eff]">Zohaib</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop Front-Ends in React
+          </p>
         </div>
       </div>
       <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottom-0 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-15 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[44px] rounded-3xl border-4 border-secondary flex justify-end items-start p-2">
-            <motion.dev
+            <motion.div
               animate={{
-                y: [0, 24, 0]
+                y: [0, 24, 0],
               }}
               transiton={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: 'loop'
+                repeatType: "loop",
               }}
-              className = "w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>
       </div>
     </section>
-  )
+  );
 }
 
 export default Hero
