@@ -46,17 +46,23 @@ const ComputerCanvas = () => {
   })
 
   return (
-    <Canvas frameloop='demand' shadows camera={{ position: [20, 3, 5], fov: 25 }} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameloop="demand"
+      shadows
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense>
-        <OrbitControls enableZoom={false}
+        <OrbitControls
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile}/>
-      </Suspense> 
-      <Preload all/>
+        <Computers isMobile={isMobile} />
+      </Suspense>
+      <Preload all />
     </Canvas>
-  )
+  );
 }
 
 export default ComputerCanvas

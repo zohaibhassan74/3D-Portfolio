@@ -9,6 +9,17 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import { progress } from 'framer-motion';
+
+
+// const progressf = () => {
+//   if (typeof progress === 'number') {
+//     const formattedProgress = progress.toFixed(2);
+//     console.log(formattedProgress);
+//   }
+  
+// }
+
 
 
 export {
@@ -24,5 +35,5 @@ export {
   EarthCanvas, 
   BallCanvas,
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
 };
